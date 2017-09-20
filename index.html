@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Title</title>
+    <title>ProphetLiao</title>
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <script src="./static/js/jquery-2.1.1.js"></script>
     <script src="./static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./static/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/tooltip.css">
+    <script src="./static/js/tooltip.js"></script>
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="stylesheet" href="./static/css/font-awesome/css/font-awesome.min.css"
 </head>
 <body>
     <div class="container content">
@@ -50,11 +52,34 @@
             </div>
         </div>
         <ul class="socialMedia">
-            <li><a href="https://github.com/ProphetRush/"><i class="fa fa-github-alt"></i></a> </li>
-            <li><a href="#0"><i class="fa fa-envelope"></i></a> </li>
-            <li><a href="#0"><i class="fa fa-qq"></i> </a> </li>
-            <li><a href="#0"><i class="fa fa-wechat"></i> </a> </li>
-            <li><a href="#0"><i class="fa fa-google"></i> </a> </li>
+            <li><a target="_blank" href="https://github.com/ProphetRush/"><i class="fa fa-github-alt" onmouseover="tooltip.pop(this, '#githubTip', {position:0})"></i></a> </li>
+            <div style="display:none;">
+                <div id="githubTip">
+                    <h3 style="color: #FFFFFF; font-size: 21px;"><i class="fa fa-github-alt"></i>      github.com/ProphetRush</h3>
+                    <p style="color: #FFFFFF; float: right">click to visit my github page.</p>
+                </div>
+            </div>
+            <li><a href="#0"><i class="fa fa-envelope" onmouseover="tooltip.pop(this, '#emailTip', {position:0})"></i></a> </li>
+            <div style="display:none;">
+                <div id="emailTip">
+                    <h3 style="color: #FFFFFF; font-size: 21px;"><i class="fa fa-envelope"></i>      TElBT1NJWkhFQEdtYWlsLmNvbQ==</h3>
+                    <p style="color: #FFFFFF; float: right">anti-crawler, click to copy.</p>
+                </div>
+            </div>
+            <li><a href="#0"><i class="fa fa-qq" onmouseover="tooltip.pop(this, '#qqTip', {position:0})"></i> </a> </li>
+            <div style="display:none;">
+                <div id="qqTip">
+                    <h3 style="color: #FFFFFF; font-size: 21px;"><i class="fa fa-qq"></i>      My QQ : 631607793</h3>
+                    <p style="color: #FFFFFF; float: right">click to copy.</p>
+                </div>
+            </div>
+            <li><a href="#0"><i class="fa fa-wechat" onmouseover="tooltip.pop(this, '#wechatTip', {position:0})"></i> </a> </li>
+            <div style="display:none;">
+                <div id="wechatTip">
+                    <h3 style="color: #FFFFFF; font-size: 21px;"><i class="fa fa-wechat"></i>      WeChat ID : Propeht_Liao</h3>
+                    <p style="color: #FFFFFF; float: right">click to copy.</p>
+                </div>
+            </div>
         </ul>
     </div>
 
