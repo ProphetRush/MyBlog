@@ -8,7 +8,10 @@
     <script src="./static/js/jquery-2.1.1.js"></script>
     <script src="./static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./static/js/iziModal.js"></script>
+    <link rel="stylesheet" href="./static/css/iziModal.css">
     <link rel="stylesheet" href="./static/css/resume.css">
+    <script src="./static/js/resume.js"></script>
 </head>
 <body>
     <div class="container content">
@@ -46,7 +49,7 @@
         </div>
         <div class="row resume-option">
             <div class="col-md-3">
-                <a href="#0"><i class="fa fa-vcard-o"></i></a>
+                <a href="#0" class="trigger-default"><i class="fa fa-vcard-o"></i></a>
                 <h2>Profile</h2>
             </div>
             <div class="col-md-3">
@@ -63,5 +66,35 @@
             </div>
         </div>
     </div>
+
+    <div id="modal-default" class="iziModal">
+        <h3>Profile</h3>
+        <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+        <ul class="info-list">
+            <li>
+                <strong>Fullname:</strong>
+                <span>Juan Dela Cruz</span>
+            </li>
+            <li>
+                <strong>Birth Date:</strong>
+                <span>September 28, 1987</span>
+            </li>
+            <li>
+                <strong>Job:</strong>
+                <span>Freelancer, Frontend Developer</span>
+            </li>
+            <li>
+                <strong>Website:</strong>
+                <span>www.kardswebsite.com</span>
+            </li>
+            <li>
+                <strong>Email:</strong>
+                <span>me@kardswebsite.com</span>
+            </li>
+
+        </ul>
+    </div>
+
 </body>
 </html>
