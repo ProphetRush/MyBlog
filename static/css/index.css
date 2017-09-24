@@ -30,6 +30,9 @@ a {
 }
 
 .navbar-default {
+    position: fixed;
+    left: 0;
+    right: 0;
     padding: 20px 0;
     background-color: transparent;
     border: 0;

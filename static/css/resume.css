@@ -1,4 +1,10 @@
+@import url("fonts.css");
+
 a {
+    transition: all 0.3s ease-in-out;
+}
+
+i {
     transition: all 0.3s ease-in-out;
 }
 
@@ -46,16 +52,23 @@ a {
 }
 
 .intro1{
-    color: #FFF;
+    color: #FFF !important;
     opacity: .80;
     margin-top: 100px;
     margin-bottom: 250px;
+    font-family: "karlaregular";
+    line-height: 45px;
+    text-align: left;
+}
+
+.intro1 span{
+    font-family: 'karlabold';
 }
 
 
-.resume-option div i{
+.resume-option div a i{
     color: #FFFFFF;
-    opacity: .80;
+    opacity: .60;
     border: 1px solid #fff;
     border-radius: 5px;
     font-size: 30px;
@@ -65,9 +78,19 @@ a {
     margin-bottom:30px;
 }
 
+.resume-option div a i:hover{
+    opacity: 1;
+}
+
 .resume-option div h2{
     color: #FFFFFF;
-    opacity: .80;
+    opacity: .60;
     font-size: 24px;
     margin: 0 0 40px;
 }
+
+.resume-option{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
