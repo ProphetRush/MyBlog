@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $("#modal-default").iziModal({
         title: "My Profile",
-        subtitle: "Simple, complete and lightweight modal plugin with jquery.",
+        subtitle: "The basic personal information of mine.",
+        header: "light",
+        headerColor: "#8a9096",
         iconClass: 'icon-announcement',
         width: 500,
         padding: 20

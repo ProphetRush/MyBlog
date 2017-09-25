@@ -95,6 +95,7 @@ i {
 }
 
 #modal-default{
+    opacity: .90;
     font-size: 1.7rem;
     line-height: 3rem;
     font-family: "lora-regular", serif;
