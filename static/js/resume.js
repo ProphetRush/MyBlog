@@ -21,7 +21,7 @@ $(document).ready(function(){
         headerColor: "#8a9096",
         iconClass: 'icon-announcement',
         width: 700,
-        padding: 20
+        padding: "20px 20px 0 20px"
     });
     $(document).on('click', '.trigger-skills', function (event) {
         event.preventDefault();
