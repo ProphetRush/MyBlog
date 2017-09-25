@@ -204,13 +204,34 @@ i {
 }
 
 /*Overwrite bootstrap progress class*/
-.skill-bars li .progress{
+.skill-bars li .skill-progress{
     background-color: #313131;
     position: relative;
     height: 100%;
 }
 
-
+.skill-bars li .skill-progress span {
+    position: absolute;
+    right: 0;
+    top: -3.2rem;
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1.1rem;
+    background-color: #313131;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: .6rem .6rem;
+    line-height: 1;
+}
+.skill-bars li .skill-progress span::after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #313131;
+    content: "";
+}
 
 .skill-bars li .percent60  { width: 60%; }
 .skill-bars li .percent65  { width: 65%; }
