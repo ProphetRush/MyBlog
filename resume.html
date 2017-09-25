@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./static/css/iziModal.css">
     <link rel="stylesheet" href="./static/css/resume.css">
     <script src="./static/js/resume.js"></script>
+    <script src="./static/js/jquery.easypiechart.min.js"></script>
 </head>
 <body>
     <div class="container content">
@@ -49,11 +50,11 @@
         </div>
         <div class="row resume-option">
             <div class="col-md-3">
-                <a href="#0" class="trigger-default"><i class="fa fa-vcard-o"></i></a>
+                <a href="#0" class="trigger-profile"><i class="fa fa-vcard-o"></i></a>
                 <h2>Profile</h2>
             </div>
             <div class="col-md-3">
-                <a href="#0"><i class="fa fa-book"></i></a>
+                <a href="#0" class="trigger-skills"><i class="fa fa-book"></i></a>
                 <h2>Skills</h2>
             </div>
             <div class="col-md-3">
@@ -67,7 +68,7 @@
         </div>
     </div>
 
-    <div id="modal-default" class="iziModal">
+    <div id="modal-profile" class="iziModal">
         <h3>Profile</h3>
         <p class="p-profile">Thanks for checking my resume, I'm a junior of Jinan University, want to be an engineer on web application field in the future. Any internship invitation will be welcomed since I want to gain experience on actual app development.</p>
 
@@ -98,6 +99,56 @@
             </li>
 
         </ul>
+    </div>
+
+    <div id="modal-skills" class="iziModal">
+        <h3>Skills</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="p-skills">Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+            </div>
+            <div style="padding: 0 40px 0 40px">
+                <div class="col-md-4">
+                    <div class="chart" data-percent="70"><span><strong>JAVA</strong>70%</span></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chart" data-percent="75"><span><strong>Python</strong>75%</span></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chart" data-percent="80"><span><strong>JavaScript</strong>80%</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <ul class="skill-bars">
+            <li>
+                <div class="progress percent90"><span>65%</span></div>
+                <strong>HTML5/CSS3/AJAX</strong>
+            </li>
+            <li>
+                <div class="progress percent70"><span>70%</span></div>
+                <strong>JQuery/Underscore/Bootstrap</strong>
+            </li>
+            <li>
+                <div class="progress percent85"><span>75%</span></div>
+                <strong>Node.js/koa2</strong>
+            </li>
+
+            <li>
+                <div class="progress percent95"><span>95%</span></div>
+                <strong>SQL</strong>
+            </li>
+            <li>
+
+                <div class="progress percent75"><span>70%</span></div>
+                <strong>Flask</strong>
+            </li>
+
+        </ul>
+
+
+
     </div>
 
 </body>
