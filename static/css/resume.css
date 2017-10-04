@@ -1,12 +1,14 @@
 @import url("fonts.css");
 
-a {
+
+strong{
+    font-weight: bold;
+}
+
+a, i, button {
     transition: all 0.3s ease-in-out;
 }
 
-i {
-    transition: all 0.3s ease-in-out;
-}
 
 .navbar-default {
     padding: 20px 0;
@@ -94,14 +96,14 @@ i {
     margin-right: 12%;
 }
 
-#modal-profile, #modal-skills{
+#modal-profile, #modal-skills, #modal-intro{
     opacity: .90;
     font-size: 1.7rem;
     line-height: 3rem;
     font-family: "lora-regular", serif;
 }
 
-#modal-profile h3, #modal-skills h3{
+#modal-profile h3, #modal-skills h3, #modal-intro h3{
     font-family: "poppins-bold", sans-serif;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -109,7 +111,7 @@ i {
     padding-left: 40px;
 }
 
-.p-profile, .p-skills{
+.p-profile, .p-skills, .p-intro{
     padding-left: 40px;
     padding-right: 40px;
     color: #6e6e6e;
@@ -117,19 +119,19 @@ i {
 }
 
 
-.info-list{
+.info-list, .info-intro{
     list-style: none;
     margin-left: 0;
     margin-top: 3rem;
     padding-left: 40px;
 }
 
-.info-list li{
+.info-list li, .info-intro li{
     padding: 0 0 1.5rem 0;
     margin-bottom: .6rem;
 }
 
-.info-list li strong{
+.info-list li strong, .info-intro li strong{
     font-family: "poppins-bold", sans-serif;
     color: #313131;
     text-transform: uppercase;
@@ -138,7 +140,7 @@ i {
     line-height: 3rem;
 }
 
-.info-list li span{
+.info-list li span, .info-intro li span{
     display: block;
     font-family: "poppins-regular", sans-serif;
     color: #888888;
@@ -242,3 +244,37 @@ i {
 .skill-bars li .percent90  { width: 90%; }
 .skill-bars li .percent95  { width: 95%; }
 .skill-bars li .percent100 { width: 100%; }
+
+
+.info-intro li span{
+    line-height: 3rem;
+}
+
+.info-intro li i{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#modal-download{
+    background: #333333;
+    opacity: .8;
+}
+
+#modal-download button, #modal-download button:focus{
+    padding: 20px;
+    font-family: "poppins-bold", sans-serif;
+    background: transparent;
+    color: #24BCAF;
+    font-size: 16px;
+    border-color: #24BCAF;
+}
+
+#modal-download .iziModal-header-title{
+    font-family: "poppins-regular", sans-serif;
+    color: #24BCAF;
+}
+
+#modal-download button:hover{
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}

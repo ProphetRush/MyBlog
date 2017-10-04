@@ -28,6 +28,36 @@ $(document).ready(function(){
         $('#modal-skills').iziModal('open');
     });
 
+    $("#modal-intro").iziModal({
+        title: "Self-evaluation",
+        subtitle: "A brief self-evaluation of myself.",
+        header: "light",
+        headerColor: "#8a9096",
+        iconClass: 'icon-announcement',
+        width: 850,
+        padding: "20px 40px 20px 40px"
+    });
+    $(document).on('click', '.trigger-intro', function (event) {
+        event.preventDefault();
+        $('#modal-intro').iziModal('open');
+    });
+
+
+    $("#modal-download").iziModal({
+        title: "Download PDF",
+        subtitle: " ",
+        header: "light",
+        headerColor: "transparent",
+        iconClass: 'icon-announcement',
+        width: 400,
+        padding: "20px 40px 20px 40px"
+    });
+    $(document).on('click', '.trigger-download', function (event) {
+        event.preventDefault();
+        $('#modal-download').iziModal('open');
+    });
+
+
     $('.chart').easyPieChart({
         scaleColor: false,
         lineWidth: 10,
