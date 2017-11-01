@@ -1,0 +1,28 @@
+@import url("fonts.css");
+
+
+strong{
+    font-weight: bold;
+}
+
+a, i, button {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-default {
+    padding: 10px 0;
+    border: 0;
+}
+
+.navbar-default .navbar-brand{
+    font-size: 1.5em;
+}
+.navbar-default .navbar-brand:hover{color: #ddd;}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #9d9d9d;
+}
