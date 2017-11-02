@@ -9,9 +9,6 @@ a, i, button {
     transition: all 0.3s ease-in-out;
 }
 
-body{
-    font-family: "Open Sans", sans-serif;
-}
 .row{
     width: 100% !important;
 }
@@ -107,30 +104,3 @@ footer{
 }
 
 
-.game{
-    text-align: center;
-}
-
-.game-panel{
-    width: 80%;
-    margin-left: 10%;
-    height: 620px;
-    margin-top: 40px;
-}
-
-.gamebtn{
-    height: 180px;
-    border-radius: 5px;
-    font-size: 100px;
-    color: #8c8c8c;
-}
-
-.game-panel .panel-body .container .row{
-    padding-bottom: 1px;
-    margin: 0;
-}
-
-.game-panel .panel-body .container .row .col-md-4{
-    padding-left: 1px;
-    padding-right: 1px;
-}
