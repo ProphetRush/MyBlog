@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TacTicToe Game</title>
+    <title>TicTacToe Game</title>
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <script src="./static/js/jquery-2.1.1.js"></script>
     <script src="./static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./static/css/TacTicToe.css">
+    <link rel="stylesheet" href="static/css/TicTacToe.css">
+    <script src="./static/js/iziModal.js"></script>
+    <link rel="stylesheet" href="./static/css/iziModal.css">
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -53,12 +55,12 @@
                 <li style="text-align: left; margin-top: 40px">Hard difficulty use an Artificial Intelligence algorithm, so it's gonna be really hard, if you can win this, you can contanct me and I'll give you some secret gift!</li>
             </ul>
 
-            <button type="button" class="btn btn-info" style="margin-top: 50px; height: 100px; width: 200px; font-size: 36px; letter-spacing: 0.5rem">PLAY!</button>
+            <button type="button" class="btn btn-info" id="playBtn" style="margin-top: 50px; height: 100px; width: 200px; font-size: 36px; letter-spacing: 0.5rem">PLAY!</button>
         </div>
         <div class="game col-md-6">
             <div class="row" style="margin-top: 20px">
-                <div class="col-md-6" style="font-size: 24px">Difficulty: <span>Easy</span></div>
-                <div class="col-md-6" style="font-size: 24px">Due time: <span>00:00:00</span></div>
+                <div class="col-md-6" style="font-size: 24px">Difficulty: <span id="difficulty" style="text-transform: capitalize">Easy</span></div>
+                <div class="col-md-6" style="font-size: 24px">Due time: <span id="timer">00:00:00</span></div>
             </div>
             <div class="row">
 
@@ -70,35 +72,35 @@
                         <div class="container" style="width: 640px">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn0"></button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn1"></button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn2"></button>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn3"></button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn4"></button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button type="button" class="gamebtn btn-block btn-default"></button>
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn5"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn6"></button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn7"></button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="gamebtn btn-block btn-default" id="btn8"></button>
                                 </div>
                             </div>
                         </div>
@@ -108,6 +110,7 @@
 
             </div>
         </div>
+        <script src="./static/js/TicTacToe.js"></script>
         <div class="col-md-3" style="text-align: center; margin-top: 75px;">
             <h1>About</h1>
             <ul>
@@ -119,6 +122,14 @@
             </ul>
             <a type="button" class="btn btn-success" style="margin-top: 40px; height: 100px; width: 200px; font-size: 24px; padding-top: 30px">Source Code</a>
         </div>
+    </div>
+    <div id="modal-win" class="iziModal winnerModal">
+        <button data-iziModal-close class="icon-close">&times;</button>
+        <div class="row" id="winner-content">
+            <h1 id="winner">X</h1>
+            <h2 id="winner-state">Winner!</h2>
+        </div>
+
     </div>
     <div id="divider"></div>
     <footer>

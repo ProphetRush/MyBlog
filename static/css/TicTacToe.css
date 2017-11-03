@@ -125,6 +125,10 @@ footer{
     color: #8c8c8c;
 }
 
+.gamebtn:hover{
+    background-color: #f8f8f8;
+}
+
 .game-panel .panel-body .container .row{
     padding-bottom: 1px;
     margin: 0;
@@ -133,4 +137,43 @@ footer{
 .game-panel .panel-body .container .row .col-md-4{
     padding-left: 1px;
     padding-right: 1px;
+}
+
+#winner-content{
+    height: 240px !important;
+    width: 640px;
+    background-color: transparent;
+    opacity: .8;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#winner{
+    font-size: 100px !important;
+    font-weight: bold;
+}
+
+.icon-close{
+
+    margin-bottom: 10px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.icon-close:hover{
+    color: black;
+    background: #FFF;
+}
+
+.iziModal{
+    background-color: rgb(230, 230, 230) !important;
 }
